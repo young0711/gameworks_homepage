@@ -1,0 +1,22 @@
+---
+alwaysApply: true
+---
+
+# Cursor General Rules
+
+## Code Quality
+- 명확한 파일 책임 분리
+- 1 파일 1 역할 원칙
+
+## Prompt Interaction
+- "이 코드는 어떤 목적을 충족하는가?"에 답하지 못하면 구현 금지
+- PRD/FLOW와 연결되지 않는 코드 생성 금지
+
+## Review Mindset
+- Cursor 제안 코드라도:
+  - 기획 의도 불일치 시 폐기
+  - 사용자 흐름 훼손 시 수정
+
+## Default Bias
+- 간결함 > 확장성
+- 추상화보다 명시적 구현

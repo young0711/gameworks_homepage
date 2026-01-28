@@ -1,0 +1,22 @@
+---
+alwaysApply: true
+---
+
+# Frontend Architecture Rules
+
+## Framework
+- Next.js 사용
+- SEO 고려한 구조 필수 (Metadata, semantic tags)
+
+## State Management
+- AuthContext는 전역 단일 인스턴스
+- Service Layer는 UI와 완전히 분리
+
+## File Structure
+- pages/app: 라우팅 책임
+- services/: API 통신 전담
+- components/: 순수 UI 컴포넌트
+
+## Forbidden
+- 페이지 내부 API 직접 호출
+- 애니메이션 로직과 비즈니스 로직 혼합

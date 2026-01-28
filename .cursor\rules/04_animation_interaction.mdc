@@ -1,0 +1,21 @@
+---
+alwaysApply: true
+---
+
+# Animation & Interaction Rules
+
+## Mandatory
+- Scroll-driven animation 최소 1개 이상
+- Hero Section: Scale + Fade Out 필수
+
+## Allowed Libraries
+- Framer Motion
+- GSAP
+
+## Performance Rules
+- Scroll 이벤트 직접 리스너 남용 금지
+- requestAnimationFrame 기반 처리 권장
+
+## Interaction Philosophy
+- 모든 애니메이션은 "의미 전달" 목적을 가진다.
+- 장식용 애니메이션 단독 사용 금지

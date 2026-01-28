@@ -1,0 +1,23 @@
+---
+alwaysApply: true
+---
+# User Flow Guard Rules
+
+## Navigation Integrity
+- Home → Board → BoardDetail → (Write)
+- Home → Apply
+- AuthContext는 BoardWrite / Apply 진입 시 반드시 선행된다.
+
+## Auth & Profile Rules
+- 게시글 작성, 댓글, 지원하기는 인증 + 프로필 완료 상태에서만 가능
+- 미인증 시:
+  - 즉시 Login / Signup 플로우로 전환
+  - 성공 후 원래 액션으로 복귀
+
+## Data Flow Rules
+- Client는 직접 DB 접근 금지
+- 모든 데이터는 Service Layer(BoardService, ApplyService)를 통해 API 호출
+
+## Anti-Pattern
+- 페이지 단독 상태 관리 금지
+- Board / Apply 로직의 중복 구현 금지

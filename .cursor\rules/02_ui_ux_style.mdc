@@ -1,0 +1,30 @@
+---
+alwaysApply: true
+---
+
+# UI & Style Rules
+
+## Global Tone
+- Black / White 대비 중심
+- Bold Typography
+- 여백을 적극적으로 사용
+
+## Header
+- Sticky Header 필수
+- Scroll Down 시:
+  - Height 축소
+  - 반투명 처리
+- 좌: 로고(홈 이동)
+- 우: member / roadmap / history
+
+## Typography
+- Hero: 매우 큰 타이포, 시각적 임팩트 최우선
+- 본문: 가독성 우선, 장문 허용
+
+## Layout Rules
+- 카드형 UI는 반복 구조에만 사용
+- 히스토리·이벤트는 가로 스크롤 우선 고려
+
+## Footer
+- 정보 밀도 최소화
+- CTA(지원하기)는 반드시 존재

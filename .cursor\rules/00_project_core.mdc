@@ -1,0 +1,29 @@
+---
+alwaysApply: true
+---
+# Project Core Rules – GAMEWORKS Official Website
+
+## Absolute Principles
+- 본 프로젝트의 모든 구현은 PRD.md의 "Core Concept: A Legacy in Motion"을 최상위 기준으로 삼는다.
+- 기능 추가, UI 변경, 구조 변경 시 반드시 아래 목적 중 하나 이상에 기여해야 한다.
+  - 브랜딩 강화
+  - 신규 부원 모집 전환
+  - 기록·아카이빙 가치
+
+## Forbidden Actions
+- 단순 정보 나열형 UI 구성 금지
+- 스크롤·인터랙션 없는 정적 랜딩 페이지 금지
+- PRD에 정의되지 않은 페이지 목적의 임의 생성 금지
+
+## Page Intent Lock
+- Home: 스토리텔링 + 몰입
+- Board: 선후배 교류(QA) 중심
+- Apply: 전환 최적화
+- History: 인터랙티브 아카이브
+
+## Decision Rule
+- 구현 선택지 충돌 시:
+  1. 스토리 전달력
+  2. 스크롤 경험
+  3. 전환 흐름
+  순으로 우선한다.
