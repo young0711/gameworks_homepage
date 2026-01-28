@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import "../styles/animations.css";
 import { Providers } from "./providers";
 import { Header } from "@/components/common/Header";
 import { Footer } from "@/components/common/Footer";
 import { METADATA } from "@/lib/constants/metadata";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: METADATA.TITLE,
@@ -22,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
           <Header />
